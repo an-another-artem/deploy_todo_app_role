@@ -1,0 +1,5 @@
+- name: Clone remote Github repository
+  ansible.builtin.git:
+    clone: true
+    dest: "{{ github_repository_path }}"
+    repo: "{{ github_remote_repository }}"
