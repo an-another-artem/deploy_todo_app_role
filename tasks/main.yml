@@ -7,3 +7,8 @@
   ansible.builtin.file:
     state: absent
     path: "{{ github_repository_path }}/.git"
+- name: Add necessary ports in firewalld
+  ansible.posix.firewalld:
+    port: "{{ item }}"
+    state: "enabled"
+  loop: "{{ firewalld_ports }}"
