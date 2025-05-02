@@ -2,4 +2,5 @@ github_repository_path: "~/.multi-container-app/"
 firewalld_ports:
   - "27017/tcp"
   - "3000/tcp"
+web_app_check_command: "wget --spider --server-response http://localhost:3000"
 
