@@ -1,1 +1,5 @@
 github_repository_path: "~/.multi-container-app/"
+firewalld_ports:
+  - "27017/tcp"
+  - "3000/tcp"
+
