@@ -12,3 +12,8 @@
     port: "{{ item }}"
     state: "enabled"
   loop: "{{ firewalld_ports }}"
+- name: Start Docker compose file
+  community.docker.docker_compose_v2:
+    project_src: "{{ github_repository_path }}"
+    state: "present"
+
