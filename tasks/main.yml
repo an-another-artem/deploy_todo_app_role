@@ -16,4 +16,11 @@
   community.docker.docker_compose_v2:
     project_src: "{{ github_repository_path }}"
     state: "present"
+- name: Check web application
+  ansible.builtin.shell:
+    cmd: "{{ web_app_check_command }}"
+  register: result
+  until: result.rc == 0
+  retries: 5
+  delay: 3
 
