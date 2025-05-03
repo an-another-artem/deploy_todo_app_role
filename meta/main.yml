@@ -1,4 +1,4 @@
-galaxy-info:
+galaxy_info:
     role_name: deploy_todo_app_role
     description: Install Docker and deploy todo app
     author: an.another.artem
