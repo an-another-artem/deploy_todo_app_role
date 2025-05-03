@@ -1,0 +1,13 @@
+galaxy-info:
+    role_name: deploy_todo_app_role
+    description: Install Docker and deploy todo app
+    author: an.another.artem
+    min_ansible_version: "2.11"
+    platforms:
+      - name: Ubuntu
+        versions:  
+          - jammy
+          - noble
+dependencies:
+  - role: xiaoyao9184.docker
+
