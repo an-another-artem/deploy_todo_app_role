@@ -3,6 +3,7 @@ galaxy_info:
     description: Install Docker and deploy todo app
     author: an.another.artem
     min_ansible_version: "2.11"
+    license: MIT
     platforms:
       - name: Ubuntu
         versions:  
